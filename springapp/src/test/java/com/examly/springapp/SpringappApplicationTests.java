@@ -50,7 +50,7 @@ class SpringappApplicationTests {
 	@Test
 
 	public void modelfolder() {
-		String directoryPath = "src/main/java/com/examly/springapp/model"; // Replace with the path to your
+		String directoryPath = "/home/coder/project/workspace/springapp/src/main/java/model"; // Replace with the path to your
 																			// directory
 		File directory = new File(directoryPath);
 		assertTrue(directory.exists() && directory.isDirectory());
@@ -58,7 +58,7 @@ class SpringappApplicationTests {
 
 	@Test
 	public void modelfile() {
-		String filePath = "src/main/java/com/examly/springapp/model/Student.java";
+		String filePath = "/home/coder/project/workspace/springapp/src/main/java/model/StudentMain.java";
 		File file = new File(filePath);
 		assertTrue(file.exists() && file.isFile());
 	}
@@ -72,7 +72,7 @@ class SpringappApplicationTests {
 
 	@Test
 	public void configfile() {
-		String filePath = "src/main/java/com/examly/springapp/configuration/AppConfig.java";
+		String filePath = "/home/coder/project/workspace/springapp/configuration/AppConfig.java";
 		File file = new File(filePath);
 		assertTrue(file.exists() && file.isFile());
 	}
