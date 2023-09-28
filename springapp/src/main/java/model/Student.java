@@ -47,13 +47,3 @@ class Student {
     }
 }
 
-public class StudentMain {
-
-    public static void main(String[] args) {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
-
-        Student student = applicationContext.getBean(Student.class);
-
-        System.out.println(student);
-    }
-}
