@@ -64,7 +64,7 @@ class SpringappApplicationTests {
 	}
 
 	public void configfolder() {
-		String directoryPath = "src/main/java/com/examly/springapp/configuration"; // Replace with the path to your
+		String directoryPath = "/home/coder/project/workspace/springapp/configuration"; // Replace with the path to your
 		// directory
 		File directory = new File(directoryPath);
 		assertTrue(directory.exists() && directory.isDirectory());
