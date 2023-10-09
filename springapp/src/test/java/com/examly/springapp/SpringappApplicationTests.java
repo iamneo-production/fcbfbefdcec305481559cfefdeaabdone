@@ -1,80 +1,17 @@
-package com.examly.springapp;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import java.io.File;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.examly.springapp.model.Student;
+public class SpringappApplicationTests {
+    public static void main(String[] args) {
+            // Load the Spring XML configuration file
+                    ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-import static org.assertj.core.api.Assertions.assertThat;
+                            // Retrieve the Student bean from the container
+                                    Student student = (Student) context.getBean("student");
 
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.boot.test.system.CapturedOutput;
-import org.springframework.boot.test.system.OutputCaptureExtension;
-
-@SpringBootTest
-class SpringappApplicationTests {
-
-	@Autowired
-	private ApplicationContext applicationContext;
-
-	@Test
-	void testStudentBean() {
-		Student student = applicationContext.getBean(Student.class);
-		student.setStudentId(123);
-		student.setFirstName("John");
-		student.setLastName("Doe");
-
-		// Perform assertions
-		assertEquals(123, student.getStudentId());
-		assertEquals("John", student.getFirstName());
-		assertEquals("Doe", student.getLastName());
-	}
-
-	@Autowired
-	private MyApplicationRunner myApplicationRunner;
-
-	@Test
-	@ExtendWith(OutputCaptureExtension.class)
-	public void testRun(CapturedOutput output) throws Exception {
-		myApplicationRunner.run(null);
-		assertThat(output).contains("Spring IoC project has started successfully!");
-	}
-
-	@Test
-
-	public void modelfolder() {
-		String directoryPath = "/home/coder/project/workspace/springapp/src/main/java/model"; // Replace with the path to your
-																			// directory
-		File directory = new File(directoryPath);
-		assertTrue(directory.exists() && directory.isDirectory());
-	}
-
-	@Test
-	public void modelfile() {
-		String filePath = "/home/coder/project/workspace/springapp/src/main/java/model/StudentMain.java";
-		File file = new File(filePath);
-		assertTrue(file.exists() && file.isFile());
-	}
-
-	public void configfolder() {
-		String directoryPath = "/home/coder/project/workspace/springapp/configuration"; // Replace with the path to your
-		// directory
-		File directory = new File(directoryPath);
-		assertTrue(directory.exists() && directory.isDirectory());
-	}
-
-	@Test
-	public void configfile() {
-		String filePath = "/home/coder/project/workspace/springapp/configuration/AppConfig.java";
-		File file = new File(filePath);
-		assertTrue(file.exists() && file.isFile());
-	}
-
-}
+                                            // Access and print student details
+                                                    System.out.println("Student ID: " + student.getStudentId());
+                                                            System.out.println("First Name: " + student.getFirstName());
+                                                                    System.out.println("Last Name: " + student.getLastName());
+                                                                        }
+                                                                        }
