@@ -9,11 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
-
 import com.examly.springapp.model.Student;
-
 import static org.assertj.core.api.Assertions.assertThat;
-
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
@@ -58,7 +55,7 @@ class SpringappApplicationTests {
 
 	@Test
 	public void modelfile() {
-		String filePath = "src/main/java/com/examly/springapp/model/Main.java";
+		String filePath = "src/main/java/com/examly/springapp/model/Student.java";
 		File file = new File(filePath);
 		assertTrue(file.exists() && file.isFile());
 	}
