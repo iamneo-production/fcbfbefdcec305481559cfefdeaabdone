@@ -1,20 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 6.868 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-modelfile  Time elapsed: 0.349 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.modelfile(SpringappApplicationTests.java:63)
-
-configfile  Time elapsed: 0.004 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.configfile(SpringappApplicationTests.java:77)
-
-modelfolder  Time elapsed: 0.005 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.examly.springapp.SpringappApplicationTests.modelfolder(SpringappApplicationTests.java:56)
-
-testStudentBean  Time elapsed: 0.004 s  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.263 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+testStudentBean  Time elapsed: 0.013 s  <<< ERROR!
 org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.examly.springapp.model.Student' available
 	at com.examly.springapp.SpringappApplicationTests.testStudentBean(SpringappApplicationTests.java:29)
 
