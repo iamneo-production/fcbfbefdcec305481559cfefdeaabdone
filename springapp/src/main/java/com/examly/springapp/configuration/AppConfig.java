@@ -1,6 +1,7 @@
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.examly.springapp.model.*;
 @Configuration
 public class AppConfig {
     @Bean

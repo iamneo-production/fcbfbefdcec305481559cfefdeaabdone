@@ -1,6 +1,6 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import com.examly.springapp.model.*;
 public class Main {
     public static void main(String[] args) {
             // Initialize the Spring ApplicationContext
@@ -15,4 +15,3 @@ public class Main {
                                                                     System.out.println("Last Name: " + student.getLastName());
                                                                         }
                                                                         }
-                                                                        
