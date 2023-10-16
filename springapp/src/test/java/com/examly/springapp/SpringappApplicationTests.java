@@ -58,7 +58,7 @@ class SpringappApplicationTests {
 
 	@Test
 	public void modelfile() {
-		String filePath = "src/main/java/com/examly/springapp/model/Student.java";
+		String filePath = "src/main/java/com/examly/springapp/model/Main.java";
 		File file = new File(filePath);
 		assertTrue(file.exists() && file.isFile());
 	}
