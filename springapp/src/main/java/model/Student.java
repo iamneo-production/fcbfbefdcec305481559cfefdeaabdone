@@ -1,49 +1,30 @@
-class Student {
+public class Student {
+        private int studentId;
+            private String firstName;
+                private String lastName;
 
-    private int stdentId;
-    private String firstName;
-    private String lastName;
+                    // Getters and setters for the fields
+                        public int getStudentId() {
+                                return studentId;
+                                    }
 
-    public Student() {
-    }
+                                        public void setStudentId(int studentId) {
+                                                this.studentId = studentId;
+                                                    }
 
-    public Student(int stdentId, String firstName, String lastName) {
-        this.stdentId = stdentId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+                                                        public String getFirstName() {
+                                                                return firstName;
+                                                                    }
 
-    public int getStdentId() {
-        return stdentId;
-    }
+                                                                        public void setFirstName(String firstName) {
+                                                                                this.firstName = firstName;
+                                                                                    }
 
-    public void setStdentId(int stdentId) {
-        this.stdentId = stdentId;
-    }
+                                                                                        public String getLastName() {
+                                                                                                return lastName;
+                                                                                                    }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "stdentId=" + stdentId +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
-    }
-}
-
+                                                                                                        public void setLastName(String lastName) {
+                                                                                                                this.lastName = lastName;
+                                                                                                                    }
+                                                                                                                    }
