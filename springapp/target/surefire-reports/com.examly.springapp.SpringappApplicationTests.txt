@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.116 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
-testStudentBean  Time elapsed: 0.021 s  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.768 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+testStudentBean  Time elapsed: 0.017 s  <<< ERROR!
 org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.examly.springapp.model.Student' available
 	at com.examly.springapp.SpringappApplicationTests.testStudentBean(SpringappApplicationTests.java:29)
 
